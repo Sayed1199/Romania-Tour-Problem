@@ -40,8 +40,8 @@ def bfs(graph,startCity,endCity):
         
         curCity = path[-1]
         
-        if curCity not in visited:
-            visited.append(curCity)
+        if curCity in visited:
+            continue
             
         visited.append(curCity)
         
